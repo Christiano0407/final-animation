@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Queue</title>
+</head>
+<body>
+    
+    <script>
+     /*   console.log("Hola Mundo"); */
+        var array = [0,0,0,0,0];
+        var front = -1;
+        var rear = -1;
+
+        function enQueue(v) {
+            if(rear < (array.length-1)){
+                rear++;
+                array[rear]=v;
+                document.write("El valor del array en posicion ["+ rear +"] es = + array[rear] + "<br>"  ");
+
+            }else {
+                document.write("array está lleno ")
+            }
+
+            enQueue(2);
+            enQueue(4);
+            enQueue(6);
+            enQueue(6);
+            enQueue(7);
+        }
+        
+        </script>
+</body>
+</html>
